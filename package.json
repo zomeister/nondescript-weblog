@@ -1,0 +1,27 @@
+{
+  "name": "nondescript-weblog",
+  "version": "1.0.0",
+  "description": "My personal blog as of now. Interesting fact but blog actually stands for weblog.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zomeister/nondescript-weblog.git"
+  },
+  "keywords": [
+    "threejs",
+    "reactjs",
+    "bootstrapreact",
+    "typescript",
+    "createreactapp",
+    "reactrouter"
+  ],
+  "author": "Zoe",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zomeister/nondescript-weblog/issues"
+  },
+  "homepage": "https://github.com/zomeister/nondescript-weblog#readme"
+}
