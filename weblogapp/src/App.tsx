@@ -1,18 +1,20 @@
-import React, {useState, Component} from 'react';
-import Container from 'react-bootstrap/Container';
-// import logo from './logo.svg';
-import './App.css';
-/** import Components from `./components/` */
-// import Header from './components/Header.js'
-import Article from './components/Article.js'
-// import Footer from './components/Footer.js'
-// import Main from './components/Main.js'
+// import React, {useState, Component} from 'react';
+// import Container from 'react-bootstrap/Container';
+// // import logo from './logo.svg';
+// import './App.css';
+// /** import Components from `./components/` */
+// // import Header from './components/Header.js'
+// import Article from './components/Article.js'
+// // import Footer from './components/Footer.js'
+// // import Main from './components/Main.js'
 
 
-// type AppProps = {
-//   website: string
-//   count: number
-// }
+// // type AppProps = {
+// //   website: string
+// //   count: number
+// // }
+
+
 
 function App(): JSX.Element {
   return (
@@ -37,4 +39,4 @@ function App(): JSX.Element {
   );
 }
 
-export default App
+export default App;
