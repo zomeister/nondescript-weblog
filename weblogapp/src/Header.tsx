@@ -1,21 +1,21 @@
 
 import React from "react"
-import {headerProps} from './Variables'
+import {headerProps} from './Variables/Variables'
 // @filename: Header.tsx
 
 let {title, user , home, nav, more} = headerProps
 
-function NavItem(props) {
-    return <li>{props.value}</li>;
-}
+// function NavItem(props) {
+//     return <li>{props.value}</li>;
+// }
 
-function NavBar(props) {
-    const nums = props.nums;
-    const navItems = nums.map(
-        (n: number) => <NavItem key={n.toString()} value={n}/>
-    );
-    return (<ul>{navItems}</ul>);
-}
+// function NavBar(props) {
+//     const nums[] = props.nums;
+//     const navItems = nums.map(
+//         (n: number) => <NavItem key={n.toString()} value={n}/>
+//     );
+//     return (<ul>{navItems}</ul>);
+// }
 
 export default function Header(): JSX.Element {
     return(

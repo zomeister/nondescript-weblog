@@ -1,68 +1,30 @@
-// import React, {useState, Component} from 'react';
-// import Container from 'react-bootstrap/Container';
-// // import logo from './logo.svg';
-// import './App.css';
-// /** import Components from `./components/` */
-import Header from './Header'
-// import Article from './components/Article.js'
-// // import Footer from './components/Footer.js'
-// // import Main from './components/Main.js'
-
-
-
 
 import React from 'react';
-import './App.css';
+import './styles/App.css';
+//import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './pages';
+import Articles from './pages/articles';
+import About from './pages/about';
+import Contact from './pages/contact';
+import Search from './pages/search';
+import SignUp from './pages/sign-up';
+import SignIn from './pages/sign-in';
 
-
-/**
- * export interface Props {
-  heading: string;
-}
-const App = (props: PropsWithChildren<Props>): JSX.Element => {
-  return (
-    <div className="App">
-      <Header/>
-      <p>hello</p>
- */
 function App(): JSX.Element {
-  return (
-    <div className="App">
-      <Header>
-        <Welcome />
-        <Navigation />
-        <Avatar />
-      </Header>
-      <Article>
-        <
-      </Article>
-      <Media>
-        <MediaCards />
-      </Media>
-      <Sidebar>
-        <SidebarItems />
-      </Sidebar>
-      <Footer /> 
-
-
-      
-      <p>hello</p>
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-      {/* <Article /> */}
-    </div>
+return (
+  <Router>
+    {/* <Navbar /> */}
+    <Routes>
+      <Route exact path='/' exact element={<Home/>} />
+      <Route path='/articles' element={<Articles/>} />
+      <Route path='/about' element={<About/>} />
+      <Route path='/contact' element={<Contact/>} />
+      <Route path='/search' element={<Search/>} />
+      <Route path='/sign-up' element={<SignUp/>} />
+      <Route path='/sign-in' element={<SignIn/>} />
+    </Routes>
+  </Router>
   );
 }
 

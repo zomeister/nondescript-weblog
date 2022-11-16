@@ -1,6 +1,6 @@
 
 import React from "react"
-import { footerProps } from './Variables'
+import { footerProps } from './Variables/Variables'
 // @filename: Header.tsx
 //let {props: {title, user , home, nav, more}} =headerProps
 export default function Footer (): JSX.Element {

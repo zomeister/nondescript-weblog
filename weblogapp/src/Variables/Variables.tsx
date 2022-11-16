@@ -19,3 +19,14 @@ export const articleProps = {
     date: '11/15/2022',
     content: 'articleLinkorURI'
 }
+
+
+import { json } from "react-router-dom";
+/**
+ * @async use for REST requests... i think
+ * @returns new Response(JSON.stringify(vals), { headers: {"Content-Type": "application/json; utf-8",},});
+ */
+const loader = async () => {
+    const data = getSomeData();
+    return json(data)
+}
